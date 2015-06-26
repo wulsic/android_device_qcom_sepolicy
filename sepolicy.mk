@@ -16,6 +16,6 @@ SSC_TARGET_LIST += msm8974
 SSC_TARGET_LIST += msm8994
 
 #ifeq ($(call is-board-platform-in-list,$(SSC_TARGET_LIST)),true)
-BOARD_SEPOLICY_UNION += sensors.te
-BOARD_SEPOLICY_UNION += sensors_test.te
+BOARD_SEPOLICY_DIRS += \
+       device/qcom/sepolicy/sensors
 #endif
